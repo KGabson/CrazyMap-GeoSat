@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CBE5C9C8-8B4D-4A83-A450-21D466118C78}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsPhoneGame2</RootNamespace>
+    <AssemblyName>WindowsPhoneGame2</AssemblyName>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>ffe63faa-27c9-45e6-89bf-ce021cf16a9a</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <WPTombstoneEnabled>false</WPTombstoneEnabled>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>SplashScreenImage.png</TileImage>
+    <TileTitle>Crazy Map</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>Borne.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\..\..\..\MathNet.Iridium.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borne.cs" />
+    <Compile Include="ChooseLevelScreen.cs" />
+    <Compile Include="ChooseLevelScreen2.cs" />
+    <Compile Include="ChooseLevelScreen3.cs" />
+    <Compile Include="ChooseWorldScreen.cs" />
+    <Compile Include="CollidableObject.cs" />
+    <Compile Include="CreditScreen.cs" />
+    <Compile Include="DragObj.cs" />
+    <Compile Include="FinishScreen.cs" />
+    <Compile Include="GamePlayScreen.cs" />
+    <Compile Include="GiveScore.cs" />
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="gps.cs" />
+    <Compile Include="GraphicObject.cs" />
+    <Compile Include="GridMap.cs" />
+    <Compile Include="InterLiRec.cs" />
+    <Compile Include="jacobi.cs" />
+    <Compile Include="ListClassObjet.cs" />
+    <Compile Include="LoadingScreen.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Matrice.cs" />
+    <Compile Include="Obstacle.cs" />
+    <Compile Include="PictureBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rotated.cs" />
+    <Compile Include="StartMenuScreen.cs" />
+    <Compile Include="TutoScreen.cs" />
+    <Compile Include="Vise.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Borne.png" />
+    <Content Include="Game.ico" />
+    <Content Include="PhoneGameThumb.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <Content Include="SplashScreenImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MyDataTypes\MyDataTypes.csproj">
+      <Project>{18C1F89B-6ACF-438F-A26E-436DA8933765}</Project>
+      <Name>MyDataTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsPhoneGame2Content\WindowsPhoneGame2Content.contentproj">
+      <Name>WindowsPhoneGame2Content %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{68D5DDE2-A818-413A-A7AC-5A7B72215A16}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
